@@ -1,11 +1,13 @@
 import ollama
 
+user_input = input("Enter your message: ")
 
 stream = ollama.chat(
     model='mistral', 
-    messages=[{'role':'user', 'content':'Tell me about the history of AI?'}], 
+    messages=[{'role': 'user', 'content': user_input}], 
     stream=True
 )
 
 for chunk in stream:
-    print(chunk['message']['content'], end='', flush=True)
+    if 'content' in chunk['message']:
+        print(chunk['message']['content'], end='', flush=True)
