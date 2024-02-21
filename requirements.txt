@@ -1,4 +1,1 @@
-langchain
-beautifulsoup4
-chromadb
-gradio
+pyttsx3
