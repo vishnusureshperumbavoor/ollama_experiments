@@ -18,3 +18,5 @@ try:
 
 except KeyboardInterrupt:
     print("\n")
+
+# this one chatting to itself. try typing hi there
