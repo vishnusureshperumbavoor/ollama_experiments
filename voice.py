@@ -1,4 +1,3 @@
-# sudo apt install espeak
 import ollama
 import pyttsx3
 
