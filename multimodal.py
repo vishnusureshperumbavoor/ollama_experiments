@@ -1,6 +1,6 @@
 import ollama 
 
-with open('VSP.jpg', 'rb') as file:
+with open('assets/VSP.jpg', 'rb') as file:
     response = ollama.chat(
         model='llava',
         messages=[
